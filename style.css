@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.subtitle {
+  color: #5E6282;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+h2 {
+  color: #212832;
+  font-family: "Volkhov", serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+header {
+  background-size: 70%;
+  background: url("images/header-deco-droite.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.header-navigation {
+  display: flex;
+  padding: 47px 0 22px 0;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 500;
+}
+.header-navigation a {
+  color: #212832;
+  text-decoration: none;
+}
+.header-navigation__logo {
+  flex: 1;
+}
+.header-navigation__logo img {
+  width: 114px;
+}
+.header-navigation__main-menu {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  flex: 2;
+  justify-content: center;
+}
+.header-navigation__secondary-menu {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header-navigation .special {
+  border: 1px solid #212832;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.header-content__image {
+  width: 55%;
+}
+.header-content__image img {
+  width: 100%;
+}
+.header-content__text {
+  width: 45%;
+}
+.header-content__text .subtitle {
+  color: #DF6951;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+.header-content__text h1 {
+  font-family: "Volkhov", serif;
+  color: #212832;
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 89px;
+  letter-spacing: -0.04em;
+  margin-bottom: 30px;
+}
+.header-content__text h1 .deco {
+  position: relative;
+  font-family: inherit;
+}
+.header-content__text h1 .deco::after {
+  content: "";
+  position: absolute;
+  height: 12px;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: -1;
+  background: url("images/header-text-deco.svg");
+}
+.header-content__text p:not(.subtitle) {
+  width: 84%;
+  color: #5E6282;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 34px;
+}
+.header-content__buttons {
+  display: flex;
+  gap: 44px;
+}
+.header-content__buttons a {
+  display: flex;
+  text-decoration: none;
+  font-size: 17px;
+}
+.header-content__buttons a.button-yellow {
+  padding: 18px 26px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #F1A501;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(241, 165, 1, 0.15);
+}
+.header-content__buttons a.button-play {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #686D77;
+}
+.header-content__buttons a.button-play span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background-color: #DF6951;
+  border-radius: 50%;
+  box-shadow: 0 15px 30px rgba(223, 105, 81, 0.3);
+}
+.header-content__buttons a.button-play span img {
+  width: 15px;
+}
+
+.services {
+  text-align: center;
+  margin-top: 90px;
+}
+.services__content {
+  display: flex;
+  gap: 38px;
+  width: 80%;
+  margin: 70px auto 0 auto;
+}
+.services__card {
+  padding: 40px 42px 45px 42px;
+  position: relative;
+  border-radius: 36px;
+  background-color: #FFFFFF;
+}
+.services__card img {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 30px;
+}
+.services__card img.custom-icon-flight {
+  overflow: hidden;
+  transform: scale(1.8);
+}
+.services__card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #212832;
+  margin-bottom: 16px;
+}
+.services__card p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #5E6282;
+}
+.services__card--plain {
+  box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02), 0 65px 47px rgba(0, 0, 0, 0.015), 0 38px 25px rgba(0, 0, 0, 0.012), 0 20px 13px rgba(0, 0, 0, 0.01), 0 8px 6px rgba(0, 0, 0, 0.007), 0 2px 3px rgba(0, 0, 0, 0.004);
+}
+.services__card--plain::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #DF6951;
+  border-radius: 30px 0 10px 0;
+  left: -35px;
+  bottom: -35px;
+  z-index: -1;
+}
+
+.destinations {
+  margin-top: 150px;
+  text-align: center;
+}
+.destinations__content {
+  width: 70%;
+  margin: 60px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+.destinations__card {
+  flex: 1;
+  border-radius: 24px;
+  background-color: #FFFFFF;
+  box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02), 0 65px 47px rgba(0, 0, 0, 0.015), 0 38px 25px rgba(0, 0, 0, 0.012), 0 20px 13px rgba(0, 0, 0, 0.01), 0 8px 6px rgba(0, 0, 0, 0.007), 0 2px 3px rgba(0, 0, 0, 0.004);
+}
+.destinations__card img {
+  width: 100%;
+  aspect-ratio: 16/17;
+  object-fit: cover;
+  object-position: center top;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.destinations__card .information {
+  padding: 25px 25px 40px 20px;
+}
+.destinations__card .information p {
+  text-align: left;
+  font-size: 18px;
+  color: #5E6282;
+  font-weight: 500;
+  display: flex;
+}
+.destinations__card .information p img {
+  width: 20px;
+  margin-right: 16px;
+  align-items: center;
+}
+.destinations__card .information p:first-child {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.destinations__card--deco {
+  position: relative;
+}
+.destinations__card--deco::after {
+  content: "";
+  position: absolute;
+  bottom: 2%;
+  right: -60px;
+  background: url("images/destinations/fioriture.svg");
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 60%;
+  z-index: -1;
+}
+
+.steps {
+  margin: 160px auto 0 auto;
+  width: 70%;
+  display: flex;
+}
+.steps > div {
+  flex: 1;
+}
+.steps__detail {
+  margin-top: 48px;
+  display: flex;
+  gap: 20px;
+  color: #5E6282;
+  font-size: 16px;
+}
+.steps__detail:first-of-type {
+  margin-top: 30px;
+}
+.steps__detail h3 {
+  margin-bottom: 4px;
+}
+.steps__detail-cube, .steps__detail-cube--green, .steps__detail-cube--orange {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1A501;
+  border-radius: 13px;
+}
+.steps__detail-cube--orange {
+  background-color: #DF6951;
+}
+.steps__detail-cube--green {
+  background-color: #006380;
+}
+.steps__detail-cube img, .steps__detail-cube--orange img, .steps__detail-cube--green img {
+  width: 22px;
+}
+.steps__card {
+  width: 70%;
+  margin: auto;
+  background-color: #FFFFFF;
+  border-radius: 26px;
+  box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02), 0 65px 47px rgba(0, 0, 0, 0.015), 0 38px 25px rgba(0, 0, 0, 0.012), 0 20px 13px rgba(0, 0, 0, 0.01), 0 8px 6px rgba(0, 0, 0, 0.007), 0 2px 3px rgba(0, 0, 0, 0.004);
+  padding: 20px 25px 30px 25px;
+  font-weight: 500;
+  color: #84829A;
+}
+.steps__card > img {
+  aspect-ratio: 16/8;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  margin-bottom: 25px;
+}
+.steps__card .title {
+  font-size: 18px;
+  color: #080809;
+  margin-bottom: 13px;
+}
+.steps__card-indicators {
+  display: flex;
+  gap: 18px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.steps__card-indicators div {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.steps__card > p:last-child {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.steps__subcard {
+  width: 75%;
+  border-radius: 26px;
+  box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02), 0 65px 47px rgba(0, 0, 0, 0.015), 0 38px 25px rgba(0, 0, 0, 0.012), 0 20px 13px rgba(0, 0, 0, 0.01), 0 8px 6px rgba(0, 0, 0, 0.007), 0 2px 3px rgba(0, 0, 0, 0.004);
+  padding: 16px 25px 22px 20px;
+  background-color: #FFFFFF;
+  display: flex;
+  gap: 12px;
+}
+.steps__subcard > div {
+  flex: 1;
+}
+.steps__subcard img {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+}
+.steps__subcard .meter-info {
+  margin-top: 14px;
+  color: #080809;
+}
+.steps__subcard .meter-info span {
+  color: #8A79DF;
+}
+
+/*# sourceMappingURL=style.css.map */

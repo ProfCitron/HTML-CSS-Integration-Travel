@@ -1,0 +1,23 @@
+@use "abstracts";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: abstracts.$font-primary;
+}
+
+.subtitle {
+  color: abstracts.$color-dark-300;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+h2 {
+  color: abstracts.$color-dark;
+  font-family: abstracts.$font-heading;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+}

@@ -1,0 +1,69 @@
+@use "abstracts";
+.services {
+  text-align: center;
+  margin-top: 90px;
+
+  &__content {
+    display: flex;
+    gap: 38px;
+    width: 80%;
+    margin: 70px auto 0 auto;
+  }
+
+  &__card {
+    padding: 40px 42px 45px 42px;
+    position: relative;
+    border-radius: 36px;
+    background-color: abstracts.$color-white;
+
+    img {
+      width: 100px;
+      height: 80px;
+      object-fit: contain;
+      object-position: center;
+      margin-bottom: 30px;
+
+      &.custom-icon-flight {
+        overflow: hidden;
+        transform: scale(1.8);
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: capitalize;
+      color: abstracts.$color-dark;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 26px;
+      color: abstracts.$color-dark-300;
+    }
+
+    &--plain {
+      box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02),
+                  0 65px 47px rgba(0, 0, 0, 0.015),
+                  0 38px 25px rgba(0, 0, 0, 0.012),
+                  0 20px 13px rgba(0, 0, 0, 0.01),
+                  0 8px 6px rgba(0, 0, 0, 0.007),
+                  0 2px 3px rgba(0, 0, 0, 0.004);
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: abstracts.$color-orange;
+        border-radius: 30px 0 10px 0;
+        left: -35px;
+        bottom: -35px;
+        z-index: -1;
+      }
+
+    }
+  }
+}

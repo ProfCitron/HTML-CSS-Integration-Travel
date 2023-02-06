@@ -1,0 +1,76 @@
+@use "abstracts";
+
+.destinations {
+  margin-top: 150px;
+  text-align: center;
+
+  &__content {
+    width: 70%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+  }
+
+  &__card {
+    flex: 1;
+    border-radius: 24px;
+    background-color: abstracts.$color-white;
+    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02),
+                0 65px 47px rgba(0, 0, 0, 0.015),
+                0 38px 25px rgba(0, 0, 0, 0.012),
+                0 20px 13px rgba(0, 0, 0, 0.01),
+                0 8px 6px rgba(0, 0, 0, 0.007),
+                0 2px 3px rgba(0, 0, 0, 0.004);
+
+    img {
+      width: 100%;
+      aspect-ratio: 16 / 17;
+      object-fit: cover;
+      object-position: center top;
+      border-top-left-radius: inherit;
+      border-top-right-radius: inherit;
+
+    }
+
+    .information {
+      padding: 25px 25px 40px 20px;
+
+      p {
+        text-align: left;
+        font-size: 18px;
+        color: abstracts.$color-dark-300;
+        font-weight: 500;
+        display: flex;
+
+        img {
+          width: 20px;
+          margin-right: 16px;
+          align-items: center;
+        }
+
+        &:first-child {
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &--deco {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 2%;
+        right: -60px;
+        background: url('images/destinations/fioriture.svg');
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 60%;
+        z-index: -1;
+      }
+    }
+  }
+}
